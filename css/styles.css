@@ -315,7 +315,7 @@ img {
 
 .link-icon-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -328,6 +328,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
+  transition: background-color var(--primary-transition);
 }
 
 .social-link-icon:hover,
