@@ -461,8 +461,12 @@ img {
 
 .footer-wrapper {
   display: flex;
-  gap: 120px;
+  /* gap: 120px; */
   align-items: baseline;
+}
+
+.footer-logo-wrapper {
+  margin-right: 120px;
 }
 
 .footer-title {
@@ -471,4 +475,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-white-background);
+}
+
+.footer-link-icon-list {
+  gap: 16px;
 }
