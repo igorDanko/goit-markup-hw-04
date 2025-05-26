@@ -11,6 +11,7 @@
   --color-hero-background: rgba(46, 47, 66, 0.7);
   --color-white-background: #ffffff;
   --color-modal-background: #fcfcfc;
+  --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* base */
@@ -172,10 +173,12 @@ img {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.698),
-      rgba(46, 47, 66, 0.698)
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office-bg.jpg);
   background-repeat: no-repeat;
@@ -213,7 +216,7 @@ img {
   color: var(--color-white-background);
   background-color: var(--color-primary-brand);
   cursor: pointer;
-  transition: 250ms;
+  transition: background-color var(--primary-transition);
 }
 
 .hero-btn:hover,
@@ -324,7 +327,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 500ms;
 }
 
 .link-icon-wrapper:hover,
